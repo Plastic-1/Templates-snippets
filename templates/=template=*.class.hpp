@@ -6,8 +6,8 @@ class	%CLASS% {
 
 	public:
 		%CLASS%(void);
-		%CLASS%(%CLASS const & src);
-		%CLASS%	operator=(%CLASS const & rhs);
+		%CLASS%(%CLASS% const & src);
+		%CLASS%	operator=(%CLASS% const & rhs);
 		~%CLASS%(void);
 
 	private:

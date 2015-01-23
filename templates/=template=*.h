@@ -1,4 +1,3 @@
-
 #ifndef %GUARD%
 # define %GUARD%
 

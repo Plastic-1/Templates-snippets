@@ -1,4 +1,3 @@
-
 #include "%FILE%.class.hpp"
 %HERE%
 %CLASS%::%CLASS%(void) {
