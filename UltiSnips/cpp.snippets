@@ -13,14 +13,17 @@ ${1:v}${1/^.*?(-)?(>)?$/(?2::(?1:>:.))/}begin(), $1${1/^.*?(-)?(>)?$/(?2::(?1:>:
 endsnippet
 
 snippet cl "class .. (class)"
-class ${1:`!p snip.rv = snip.basename or "name"`}
+class	${1:`!p "name"`}
 {
-public:
-	${1/(\w+).*/$1/} (${2:arguments});
-	virtual ~${1/(\w+).*/$1/} ();
+	public:
+		${1/(\w+).*/$1/}(void);
+		${1/(\w+).*/$1/}(${1/(\w+).*/$1/} const & src);
+		${1/(\w+).*/$1/}& operator=(${1/(\w+).*/$1/} const & rhs);
+		~${1/(\w+).*/$1/}(void);
 
-private:
-	${0:/* data */}
+	private:
+		${0:/* data */}
+
 };
 endsnippet
 
