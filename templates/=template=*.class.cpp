@@ -1,5 +1,5 @@
 
-#include "%FILE%.hpp"
+#include "%FILE%.class.hpp"
 %HERE%
 %CLASS%::%CLASS%(void) {
 	return;
