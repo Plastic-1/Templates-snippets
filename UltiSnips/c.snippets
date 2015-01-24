@@ -40,8 +40,16 @@ ${1:#pragma mark -
 $0
 endsnippet
 
-snippet main "main() (main)"
+snippet main "main(int ac, char **av)"
 int main(int ac, char **av)
+{
+	${VISUAL}${0}
+	return 0;
+}
+endsnippet
+
+snippet mainn "main(void)"
+int main(void)
 {
 	${VISUAL}${0}
 	return 0;
