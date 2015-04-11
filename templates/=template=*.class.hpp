@@ -1,7 +1,7 @@
 #ifndef %GUARD%
 # define %GUARD%
 
-class	%CLASS% {
+class %CLASS% {
 
 	public:
 		%CLASS%(void);
